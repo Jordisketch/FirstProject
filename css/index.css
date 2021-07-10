@@ -1,0 +1,177 @@
+html{
+    font-size: 62,5%;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+body{
+    font-size: 16px;
+    font-family: 'Rokkitt', serif;
+    background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+}
+:root{
+    --color: aquamarine;
+    --color2: yellowgreen;
+    --fuentenav: 'Nanum Myeongjo', serif;
+}
+h1,h2,h3{
+    text-align: center;
+    font-size: 1,8rem;
+}
+.encabezado{
+    text-align: center;
+    font-size: 1rem;
+    color: cadetblue;
+    font-family: cursive;
+}
+
+.navegacion{
+  background-color: wheat;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 768px){
+    .navegacion{
+        flex-direction: row;
+      
+    }
+}
+.navegacion > a{
+  font-family: var(--fuentenav);
+  text-decoration: none;
+  padding: 1rem;
+  color:saddlebrown ;
+  font-weight: bold;
+}
+.navegacion > a:hover{
+  background-color: coral;
+  color: whitesmoke;
+}
+.ubicacion h2, 
+.ubicacion p{
+    font-size: 2rem;
+    color: whitesmoke;
+    font-family: cursive;
+    text-align: center;
+    margin-top: 0rem;
+    padding-bottom: 5rem;
+}
+.ubicacion p,
+.ubicacion span{
+    font-size: 15px;
+}
+.ubicacion{
+    background-image: url("../imagenes/location.png");
+    background-size: cover;
+    height: 25rem;
+    padding-top: 2rem;
+    position: relative;
+}
+
+.contenido-ubicacion{
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0, .7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+}
+.logo{
+    display: flex;
+    align-items: flex-end;
+}
+.logo svg{
+    padding-left: 1rem;
+    margin-bottom: 6rem;
+}
+/** MEdia queries ayudan a hacer la pagina responsive**/
+.boton{
+    background-color: wheat;
+    padding: 10px 8px;
+    text-decoration: none;
+    color: saddlebrown;
+    text-transform: uppercase;
+    border-radius: 8px;
+    border: hidden;
+}
+
+.boton:hover{
+    background-color: coral;
+    color: white;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sombra{
+    box-shadow: 8px 4px 9px 2px rgba(131,120,120,0.43);
+-webkit-box-shadow: 8px 4px 9px 2px rgba(131,120,120,0.43);
+-moz-box-shadow: 8px 4px 9px 2px rgba(131,120,120,0.43);
+    margin: 2rem 2rem;
+    background-color: white;
+}
+.aficiones{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 1rem;
+}
+.aficion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aficiones .iconos{
+    height: 5rem;
+    width: 5rem;
+    background-color:saddlebrown;
+    border-radius: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+.aficiones p{
+    line-height: 2rem;
+
+}
+.aficiones h3{
+    font-family: cursive;
+}
+
+.formulario fieldset{
+    border: none;
+    text-align: center;
+}
+.formulario{
+    background-color: grey;
+    width: min(30rem, 100%);
+    margin: 0 auto;
+    border-radius: 1rem;
+    width: 5ren;
+}
+.formulario legend{
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    padding-top: 1rem;
+}
+.form h2{
+    font-size: 2rem;
+}
+.campos{
+    margin-bottom: 1rem;
+    display: block;
+}
+.campos input{
+    padding:.6rem;
+}
